@@ -15,7 +15,9 @@ class TablaDeEmailsInscritos extends Migration
     {
         Schema::create('emails',function (Blueprint $table){
             $table->bigIncrements('id');
+            $table->String('name');
             $table->String('email',50)->unique();
+            $table->String('comments');
             $table->timestamp('created_at')->nullable();
         });
     }

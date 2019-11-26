@@ -38,10 +38,12 @@ class controladorSuscribirse extends Controller
     public function store(mailValidation $request)
     {
         $emails=new Email;
+        $emails->name=$request->name;
         $emails->email=$Request->direccionemail;
+        $table->comments=$request->comments;
         $emails->save();
 
-        return redirect('views/create');
+        return redirect('paginaprincipal');
     }
 
     /**

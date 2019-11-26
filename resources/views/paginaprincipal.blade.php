@@ -456,7 +456,7 @@
       <p><span class="glyphicon glyphicon-phone"></span> +34 123456789</p>
       <p><span class="glyphicon glyphicon-envelope"></span> crojaspe18dw@ikzubirimanteo.com</p>
     </div>
-    <form method="POST" class="col-sm-7 slideanim">
+    <form method="POST" action="store" class="col-sm-7 slideanim">
       {{ csrf_field() }}
       <div class="row">
         <div class="col-sm-6 form-group">
